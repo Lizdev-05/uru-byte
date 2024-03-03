@@ -1,0 +1,110 @@
+.homeContainer {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.homeRight {
+  width: 100%;
+  /* stylelint-disable */
+  height: fit-content;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.homeCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.homeIcon {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.homeCard {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.homeCard:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.homeCard h5 {
+  font-size: 0.95rem;
+}
+
+.homeCard small {
+  font-size: 0.7rem;
+  color: var(--color--light);
+}
+
+.homeContent {
+  margin-top: 5rem;
+}
+
+.homeContent p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color--light);
+}
+
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+  .homeContainer {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .homeRight {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .homeContent p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+@media screen and (max-width: 600px) {
+  .homeRight {
+    width: 90%;
+    margin: 2rem auto 3rem;
+  }
+
+  .homeCard {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .homeContent {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .homeContent p {
+    margin: 1.5rem 0;
+  }
+  .homeContent h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}

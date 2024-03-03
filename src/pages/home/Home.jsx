@@ -5,8 +5,8 @@ import homeImg from "../../assets/Group16.png";
 const About = () => {
   return (
     <section id="home">
-      <div className={`container ${style.aboutContainer}`}>
-        <div className={style.meContent}>
+      <div className={`container ${style.homeContainer}`}>
+        <div className={style.homeContent}>
           <h1>Gain a Competitive Edge with Actionable Market Intelligence</h1>
           <p>
             Unlock critical insights on companies, topics, and industries across
