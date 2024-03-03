@@ -91,12 +91,12 @@ section > h2 {
 }
 
 .text-color {
-  color: var(--color-primary);
+  color: var(--dark);
   transition: var(--transition);
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-dark);
   transition: var(--transition);
 }
 
