@@ -55,6 +55,13 @@ body {
   margin: 0 auto;
 }
 
+.homeContainer {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
 h1,
 h2,
 h3,

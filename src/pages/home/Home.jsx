@@ -5,7 +5,7 @@ import homeImg from "../../assets/Rectangle.png";
 const About = () => {
   return (
     <section id="home">
-      <div className={`container ${style.homeContainer}`}>
+      <div className={`homeContainer ${style.homeContainer}`}>
         <div className={style.homeContent}>
           <h1>Gain a Competitive Edge with Actionable Market Intelligence</h1>
           <p>
