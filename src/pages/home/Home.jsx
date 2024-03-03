@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./home.module.css";
-import homeImg from "../../assets/Group16.png";
+import style from "./Home.module.css";
+import homeImg from "../../assets/Rectangle.png";
 
 const About = () => {
   return (
@@ -12,10 +12,10 @@ const About = () => {
             Unlock critical insights on companies, topics, and industries across
             an extensive universe of content—including your own.
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn-warning">
             Join Waitlist
           </a>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn-secondary">
             Contact Us
           </a>
         </div>

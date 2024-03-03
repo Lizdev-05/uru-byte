@@ -27,7 +27,7 @@
   --color-dark: #2b2b2b;
   --color-light: rgba(255, 255, 255, 0.6);
   --transition: all 400ms ease;
-  --container-width-lg: 75%;
+  --container-width-lg: 85%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
@@ -53,6 +53,8 @@ body {
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 h1,
@@ -113,6 +115,31 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+}
+
+.btn-warning {
+  width: max-content;
+  display: inline-block;
+  color: #fff;
+  background: #e58a13;
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.btn-secondary {
+  width: max-content;
+  display: inline-block;
+  color: #e58a13;
+  background: var(--color-light);
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 1px solid #e58a13;
+  transition: var(--transition);
+  margin-left: 1rem;
 }
 
 .btn:hover {
