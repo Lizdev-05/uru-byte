@@ -1,23 +1,26 @@
 import React from "react";
-import style from "./About.module.css";
-import homeImg from "../../assets/doro-home-img.svg";
+import style from "./home.module.css";
+import homeImg from "../../assets/Group16.png";
 
 const About = () => {
   return (
     <section id="home">
       <div className={`container ${style.aboutContainer}`}>
         <div className={style.meContent}>
-          <h1>Building Trust, Preventing Fraud</h1>
+          <h1>Gain a Competitive Edge with Actionable Market Intelligence</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-            quasi quis, nesciunt neque tenetur a velit et repellat ipsa nemo?
+            Unlock critical insights on companies, topics, and industries across
+            an extensive universe of content—including your own.
           </p>
           <a href="#contact" className="btn btn-primary">
-            Let's talk
+            Join Waitlist
+          </a>
+          <a href="#contact" className="btn btn-primary">
+            Contact Us
           </a>
         </div>
-        <div className={style.aboutMe}>
-          <div className={style.meImg}>
+        <div className={style.homeRight}>
+          <div className={style.homeImg}>
             <img src={homeImg} alt="Home image" />
           </div>
         </div>
