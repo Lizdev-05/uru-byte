@@ -1,0 +1,209 @@
+.featureIntro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.featureContainer {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.introSpan {
+  background: #e58a131a;
+  padding: 0.2rem 1rem;
+  color: #e58a13;
+  border-radius: 2rem;
+}
+.featureContainer h2 {
+  font-size: 3.2rem;
+  color: #0b1c33;
+  line-height: 4.5rem;
+  font-weight: bold;
+}
+
+.featureContainer p {
+  color: #747474;
+  font-size: 1.2rem;
+}
+.featureContent h2 {
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+.featureCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 3rem 5rem;
+}
+
+.featureIcon {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.featureCard:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.featureCard h5 {
+  font-size: 1.4rem;
+}
+
+.featureCard small {
+  font-size: 0.9rem;
+  color: rgb(106, 106, 106);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #e58a13;
+}
+
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+  .featureUs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .featureCards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .featureCard {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+@media screen and (max-width: 600px) {
+  .featureUs {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .featureCards {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .featureCard {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .featureContainer h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+  }
+
+  .featureContainer p {
+    color: #747474;
+    font-size: 1rem;
+  }
+  /* .featureContent h2 {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  } */
+
+  .featureIntro {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .featureList {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-left: 1rem;
+  }
+
+  .iconn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -3.5rem;
+    top: 2rem;
+  }
+
+  .featureContent h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text {
+    flex-grow: 1;
+    color: #606060;
+    font-size: 1rem;
+  }
+
+  .meContent {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .meContent p {
+    margin: 1.5rem 0;
+  }
+  .meContent h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .featureList {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .iconn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -1.7rem;
+  }
+
+  .text {
+    flex-grow: 1;
+    color: #606060;
+  }
+
+  .text h2 {
+    font-size: 1.2rem; /* Adjust the font size of accordion headings */
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .text p {
+    font-size: 0.9rem; /* Adjust the font size of accordion content */
+  }
+}
