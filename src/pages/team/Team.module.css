@@ -1,15 +1,16 @@
-.featureIntro {
+.teamIntro {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 75%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   text-align: center;
   padding: 2rem;
 }
 
-.featureContainer {
+.teamContainer {
   margin-bottom: 5rem;
+  background-color: #fffbf8;
 }
 
 .introSpan {
@@ -18,37 +19,37 @@
   color: #e58a13;
   border-radius: 2rem;
 }
-.featureContainer h2 {
+.teamContainer h2 {
   font-size: 3.2rem;
   color: #0b1c33;
   line-height: 4.5rem;
   font-weight: bold;
 }
 
-.featureContainer p {
+.teamContainer p {
   color: #747474;
   font-size: 1.2rem;
 }
-.featureContent h2 {
+.teamContent h2 {
   font-size: 1.9rem;
   margin-bottom: 2rem;
 }
 
-.featureCards {
+.teamCards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 3rem 5rem;
 }
 
-.featureIcon {
+.teamContent {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
 }
+/* 
 
-.featureCard {
+.teamCard {
   border: 1px solid grey;
   border-radius: 1rem;
   padding: 2rem;
@@ -56,17 +57,17 @@
   transition: var(--transition);
 }
 
-.featureCard:hover {
+.teamCard:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.featureCard h5 {
+.teamCard h5 {
   font-size: 1.4rem;
 }
 
-.featureCard small {
+.teamCard small {
   font-size: 0.9rem;
   color: rgb(106, 106, 106);
 }
@@ -77,21 +78,21 @@
   justify-content: center;
   gap: 1rem;
   color: #e58a13;
-}
+} */
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
-  .featureUs {
+  .teamUs {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
-  .featureCards {
+  .teamCards {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     padding: 2rem;
   }
 
-  .featureCard {
+  .teamCard {
     border: 1px solid grey;
     border-radius: 1rem;
     padding: 1rem;
@@ -101,44 +102,44 @@
 
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
-  .featureUs {
+  .teamUs {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
-  .featureCards {
+  .teamCards {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     padding: 2rem;
   }
 
-  .featureCard {
+  .teamCard {
     border: 1px solid grey;
     border-radius: 1rem;
     padding: 1rem;
     font-size: 1rem;
   }
 
-  .featureContainer h2 {
+  .teamContainer h2 {
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 1rem 0;
   }
 
-  .featureContainer p {
+  .teamContainer p {
     color: #747474;
     font-size: 1rem;
   }
-  /* .featureContent h2 {
+  /* .teamContent h2 {
     font-size: 1.9rem;
     margin-bottom: 2rem;
   } */
 
-  .featureIntro {
+  .teamIntro {
     width: 100%;
     margin: 1rem auto;
   }
 
-  .featureList {
+  .teamList {
     display: flex;
     align-items: center;
     padding: 0 1rem;
@@ -153,7 +154,7 @@
     top: 2rem;
   }
 
-  .featureContent h2 {
+  .teamContent h2 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
@@ -177,7 +178,7 @@
     font-weight: 600;
   }
 
-  .featureList {
+  .teamList {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
