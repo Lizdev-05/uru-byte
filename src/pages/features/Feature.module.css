@@ -1,4 +1,4 @@
-.aboutIntro {
+.featureIntro {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,9 +8,8 @@
   padding: 2rem;
 }
 
-.aboutContainer {
+.featureContainer {
   margin-bottom: 5rem;
-  background: #f8fbff;
 }
 
 .introSpan {
@@ -19,102 +18,65 @@
   color: #e58a13;
   border-radius: 2rem;
 }
-.aboutContainer h2 {
+.featureContainer h2 {
   font-size: 3.2rem;
   color: #0b1c33;
-  /* margin-bottom: 2rem; */
   line-height: 4.5rem;
   font-weight: bold;
 }
 
-.aboutContainer p {
+.featureContainer p {
   color: #747474;
   font-size: 1.2rem;
 }
-.aboutContent h2 {
+.featureContent h2 {
   font-size: 1.9rem;
-
   margin-bottom: 2rem;
 }
-.aboutUs {
+
+.featureCards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 5rem;
 }
 
-.aboutList {
-  display: flex;
-  align-items: center;
-  padding: 0 4rem;
-}
-
-.iconn {
-  position: absolute;
+.featureIcon {
+  text-align: center;
   width: 50px;
   height: 50px;
-  left: -4rem;
-  top: 2rem;
+  margin: 0 auto;
 }
 
-.text {
-  flex-grow: 1;
-  color: #606060;
-  position: relative;
-}
-
-.text h2 {
-  font-size: 1.5rem;
-}
-
-.meContent p {
-  margin: 2rem 0 2.6rem;
-  color: var(--color--light);
-}
-
-/* ==================== FORM =================== */
-.aboutForm {
-  background-color: #fff;
+.featureCard {
+  border: 1px solid grey;
+  border-radius: 1rem;
   padding: 2rem;
-}
-
-.aboutForm h2 {
-  font-size: 2.5rem;
-  color: #3788e5;
-  font-weight: 600;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background: transparent;
-  border: 1px solid rgb(76, 76, 76);
-  resize: none;
-  color: var(--color-white);
-}
-
-.btn {
-  width: 100%;
-  display: inline-block;
-  background-color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
-  color: #fff;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
+  text-align: center;
   transition: var(--transition);
 }
-.btn:hover {
-  background-color: #3788e5;
-  color: var(--color-bg);
-  border-color: transparent;
+
+.featureCard:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.featureCard h5 {
+  font-size: 1.4rem;
+}
+
+.featureCard small {
+  font-size: 0.9rem;
+  color: rgb(106, 106, 106);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #e58a13;
 }
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
@@ -123,26 +85,26 @@ textarea {
 
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
-  .aboutUs {
+  .featureUs {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
 
-  .aboutIntro {
+  .featureIntro {
     width: 100%;
     margin: 1rem auto;
   }
-  .aboutContainer h2 {
+  .featureContainer h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  .aboutContainer p {
+  .featureContainer p {
     color: #606060;
     font-size: 1rem;
   }
 
-  .aboutList {
+  .featureList {
     display: flex;
     align-items: center;
     padding: 0 1rem;
@@ -154,16 +116,17 @@ textarea {
     width: 50px;
     height: 50px;
     left: -3.5rem;
-    top: 1rem;
+    top: 2rem;
   }
 
-  .aboutContent h2 {
+  .featureContent h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   .text {
     flex-grow: 1;
+    color: #606060;
     font-size: 1rem;
   }
 
@@ -180,7 +143,7 @@ textarea {
     font-weight: 600;
   }
 
-  .aboutList {
+  .featureList {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
@@ -194,25 +157,18 @@ textarea {
     left: -1.7rem;
   }
 
+  .text {
+    flex-grow: 1;
+    color: #606060;
+  }
+
   .text h2 {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Adjust the font size of accordion headings */
+    margin-bottom: 0.5rem;
     margin-left: 1rem;
-    line-height: 2.5rem;
   }
 
   .text p {
-    font-size: 0.9rem;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  input,
-  textarea {
-    padding: 0.5rem;
-
-    font-size: 12px;
+    font-size: 0.9rem; /* Adjust the font size of accordion content */
   }
 }
