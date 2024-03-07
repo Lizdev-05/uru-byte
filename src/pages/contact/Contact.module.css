@@ -59,7 +59,13 @@
   font-size: 1rem;
 }
 
+.icon {
+  font-size: 2rem;
+  color: #e58a13;
+}
+
 /* ==================== FORM =================== */
+
 .contactForm {
   background-color: #fff;
   padding: 2rem;
@@ -125,8 +131,9 @@ textarea {
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
   .contactUs {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
   }
 
   .contactIntro {
@@ -150,60 +157,21 @@ textarea {
     margin-left: 1rem;
   }
 
-  .iconn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: -3.5rem;
-    top: 1rem;
-  }
-
-  .contactContent h2 {
+  .contactContent h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    line-height: 2rem;
   }
 
-  .text {
-    flex-grow: 1;
+  .contactDetail h4 {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .icon {
     font-size: 1rem;
   }
 
-  .meContent {
-    text-align: center;
-    margin-top: 0;
-  }
-
-  .meContent p {
-    margin: 1.5rem 0;
-  }
-  .meContent h1 {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-
-  .contactList {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    margin-left: 0;
-  }
-
-  .iconn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: -1.7rem;
-  }
-
-  .text h2 {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    line-height: 2.5rem;
-  }
-
-  .text p {
-    font-size: 0.9rem;
-  }
   form {
     display: flex;
     flex-direction: column;
@@ -212,8 +180,8 @@ textarea {
 
   input,
   textarea {
-    padding: 0.5rem;
-
+    padding: 1rem;
+    margin: 0.5rem 0;
     font-size: 12px;
   }
 }

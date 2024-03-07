@@ -48,13 +48,12 @@ const Contact = () => {
             </p>
             <div className={style.contactDetails}>
               <div className={style.contactDetail}>
-                <FaEnvelope color="#e58a13" size={22} />
+                <FaEnvelope className={style.icon} />
                 <h4>ojesanmioyin@gmail.com</h4>
               </div>
 
               <div className={style.contactDetail}>
-                <IoLocationSharp color="#e58a13" size={22} />{" "}
-                <h4>Accra, Ghana</h4>
+                <IoLocationSharp className={style.icon} /> <h4>Accra, Ghana</h4>
               </div>
             </div>
           </div>
