@@ -14,10 +14,10 @@ import {
 
 // import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
-const TrustProfile = () => {
+const About = () => {
   return (
-    <div id="about">
-      <div id="about" className={`container ${style.aboutContainer}`}>
+    <div id="about" className={style.aboutContainer}>
+      <div id="about" className={`containe ${style.aboutContainer}`}>
         <div className={style.aboutIntro}>
           <span className={style.introSpan}>About</span>
           <h2 id="">Empowering African Businesses with Data-Driven Insights</h2>
@@ -144,4 +144,4 @@ const TrustProfile = () => {
   );
 };
 
-export default TrustProfile;
+export default About;

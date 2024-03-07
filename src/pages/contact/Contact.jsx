@@ -6,7 +6,7 @@ import { IoLocationSharp } from "react-icons/io5";
 const Contact = () => {
   return (
     <div id="contact">
-      <div id="contact" className={`container ${style.contactContainer}`}>
+      <div id="contact" className={`containe ${style.contactContainer}`}>
         <div className={style.contactUs}>
           <div className={style.contactForm}>
             <h2>Contact Us</h2>

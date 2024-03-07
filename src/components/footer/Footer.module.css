@@ -1,0 +1,68 @@
+.container {
+  margin: 0 5rem;
+  margin-bottom: 5rem;
+}
+
+.footerImg {
+  width: 250px;
+  margin-left: 3rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 3rem 5rem;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer li,
+.footer p {
+  color: #797979;
+  margin-top: 1rem;
+}
+
+.btnWarning {
+  width: max-content;
+  display: inline-block;
+  color: #e58a13;
+  margin-top: 1.5rem;
+  background: transparent;
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 1px solid #e58a13;
+  transition: var(--transition);
+}
+
+/* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  .footerImg {
+    width: 250px;
+    margin-left: 2rem;
+  }
+}
+
+/* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
+@media screen and (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .footerImg {
+    width: 250px;
+    margin-left: -1rem;
+  }
+}

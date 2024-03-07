@@ -9,6 +9,7 @@
 }
 
 .faqContainer {
+  margin: 0 3.5rem;
   margin-bottom: 3rem;
 }
 
@@ -21,7 +22,6 @@
 .faqContainer h2 {
   font-size: 3.2rem;
   color: #0b1c33;
-  /* margin-bottom: 2rem; */
   line-height: 4.5rem;
   font-weight: bold;
 }
@@ -39,28 +39,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  padding: 2rem;
-}
-
-.faqList {
-  display: flex;
-  align-items: center;
   padding: 0 4rem;
-}
-
-.text {
-  flex-grow: 1;
-  color: #606060;
-  position: relative;
-}
-
-.text h2 {
-  font-size: 1.5rem;
-}
-
-.meContent p {
-  margin: 2rem 0 2.6rem;
-  color: var(--color--light);
+  margin: 0 4rem;
 }
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
@@ -68,6 +48,8 @@
   .faqUs {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 2rem;
   }
 
   .faqContainer p {
@@ -85,7 +67,14 @@
 @media screen and (max-width: 600px) {
   .faqUs {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 0rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+
+  .faqContainer {
+    margin: 0rem;
+    margin-bottom: 1rem;
   }
 
   .faqIntro {
@@ -99,7 +88,7 @@
 
   .faqContainer p {
     color: #606060;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .faqList {

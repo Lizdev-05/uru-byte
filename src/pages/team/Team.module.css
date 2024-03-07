@@ -9,8 +9,10 @@
 }
 
 .teamContainer {
+  margin: 0 auto;
   margin-bottom: 5rem;
   background-color: #fffbf8;
+  padding: 3rem 0;
 }
 
 .introSpan {
@@ -39,7 +41,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  padding: 3rem 5rem;
+  margin: 0 5rem;
+  padding: 2.5rem;
 }
 
 .teamContent {
@@ -109,6 +112,7 @@
   .teamCards {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+    margin: 0 2rem;
     padding: 2rem;
   }
 
@@ -119,6 +123,9 @@
     font-size: 1rem;
   }
 
+  .teamContainer {
+    padding: 2rem 0;
+  }
   .teamContainer h2 {
     font-size: 1.5rem;
     line-height: 2rem;

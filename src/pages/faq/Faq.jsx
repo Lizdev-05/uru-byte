@@ -13,8 +13,8 @@ import {
 
 const Faq = () => {
   return (
-    <div id="about">
-      <div id="about" className={`container ${style.faqContainer}`}>
+    <div id="faq">
+      <div id="faq" className={`containe ${style.faqContainer}`}>
         <div className={style.faqIntro}>
           <span className={style.introSpan}>FAQs</span>
           <h2 id="">Frequently asked questions</h2>

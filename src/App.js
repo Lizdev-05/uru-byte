@@ -6,6 +6,7 @@ import Feature from "./pages/features/Feature";
 import Team from "./pages/team/Team";
 import Faq from "./pages/faq/Faq";
 import Contact from "./pages/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Team />
       <Faq />
       <Contact />
+      <Footer />
     </div>
   );
 }

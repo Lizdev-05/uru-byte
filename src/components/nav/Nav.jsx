@@ -50,7 +50,7 @@ const Nav = () => {
           <div
             className={classNames(mobileMenu ? "block" : "hidden", "md:block")}
           >
-            <ul className="flex flex-col gap-8 items-center mt-4 md:flex-row md:mt-2">
+            <ul className="flex flex-col gap-8 items-center mt-4 md:flex-row md:mt-2 md:gap-4">
               <li>
                 <a
                   href="#"
@@ -80,11 +80,11 @@ const Nav = () => {
               </li>
               <li>
                 <a
-                  href="#project"
-                  onClick={() => setNav("#project")}
+                  href="#faq"
+                  onClick={() => setNav("#faq")}
                   className={activeNav === "#project" ? "active" : ""}
                 >
-                  Project
+                  FAQ
                 </a>
               </li>
               <li>

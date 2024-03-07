@@ -8,7 +8,7 @@ import kwesi from "../../assets/kwesi.png";
 const Team = () => {
   return (
     <div id="team">
-      <div id="team" className={`container ${style.teamContainer}`}>
+      <div id="team" className={`containe ${style.teamContainer}`}>
         <div className={style.teamIntro}>
           <span className={style.introSpan}>OUR TEAM</span>
           <h2 id="">Meet our amazing team</h2>

@@ -11,6 +11,7 @@
 .aboutContainer {
   margin-bottom: 5rem;
   background: #f8fbff;
+  padding: 3rem 0;
 }
 
 .introSpan {
@@ -39,6 +40,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
+
+  margin: 0 5rem;
   padding: 2rem;
 }
 
@@ -121,6 +124,11 @@ textarea {
   .aboutUs {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+    margin: 1rem;
+  }
+
+  .aboutContainer {
+    padding: 1rem 0;
   }
 
   .aboutContainer p {
@@ -138,7 +146,8 @@ textarea {
 @media screen and (max-width: 600px) {
   .aboutUs {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 0rem;
+    margin: 0.5rem;
   }
 
   .aboutIntro {
@@ -158,15 +167,15 @@ textarea {
   .aboutList {
     display: flex;
     align-items: center;
-    padding: 0 1rem;
-    margin-left: 1rem;
+    padding: 0 2rem;
+    /* margin-left: 1rem; */
   }
 
   .iconn {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    left: -3.5rem;
+    width: 40px;
+    height: 40px;
+    /* left: -3.5rem; */
     top: 1rem;
   }
 
