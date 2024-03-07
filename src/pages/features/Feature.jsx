@@ -12,8 +12,8 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Feature = () => {
   return (
-    <div id="feature">
-      <div id="feature" className={`container ${style.featureContainer}`}>
+    <div id="features">
+      <div id="features" className={`container ${style.featureContainer}`}>
         <div className={style.featureIntro}>
           <span className={style.introSpan}>FEATURES</span>
           <h2 id="">Explore our amazing features</h2>

@@ -81,6 +81,22 @@
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
+  .featureUs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .featureCards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .featureCard {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
 
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
@@ -89,19 +105,37 @@
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
+  .featureCards {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .featureCard {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .featureContainer h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+  }
+
+  .featureContainer p {
+    color: #747474;
+    font-size: 1rem;
+  }
+  /* .featureContent h2 {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  } */
 
   .featureIntro {
     width: 100%;
     margin: 1rem auto;
-  }
-  .featureContainer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .featureContainer p {
-    color: #606060;
-    font-size: 1rem;
   }
 
   .featureList {
@@ -120,7 +154,7 @@
   }
 
   .featureContent h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
 

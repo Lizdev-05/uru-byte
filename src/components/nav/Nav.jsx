@@ -71,11 +71,11 @@ const Nav = () => {
               </li>
               <li>
                 <a
-                  href="#skills"
-                  onClick={() => setNav("#skills")}
+                  href="#features"
+                  onClick={() => setNav("#features")}
                   className={activeNav === "#skills" ? "active" : ""}
                 >
-                  Skills
+                  Features
                 </a>
               </li>
               <li>

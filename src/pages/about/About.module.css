@@ -33,7 +33,6 @@
 }
 .aboutContent h2 {
   font-size: 1.9rem;
-
   margin-bottom: 2rem;
 }
 .aboutUs {
@@ -119,6 +118,20 @@ textarea {
 
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
+  .aboutUs {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .aboutContainer p {
+    color: #747474;
+    font-size: 1rem;
+  }
+  .aboutContainer h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+  }
 }
 
 /* ===============================  MEDIA QUERY (SMALL DEVICES) ========================== */
