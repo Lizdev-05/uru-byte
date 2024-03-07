@@ -26,8 +26,7 @@ const Contact = () => {
                 required
               />
               <textarea
-                name="message"
-                id=""
+                type="text"
                 minLength={5}
                 cols="30"
                 rows="7"
