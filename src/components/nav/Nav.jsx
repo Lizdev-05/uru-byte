@@ -73,7 +73,7 @@ const Nav = () => {
                 <a
                   href="#features"
                   onClick={() => setNav("#features")}
-                  className={activeNav === "#skills" ? "active" : ""}
+                  className={activeNav === "#features" ? "active" : ""}
                 >
                   Features
                 </a>
@@ -82,7 +82,7 @@ const Nav = () => {
                 <a
                   href="#faq"
                   onClick={() => setNav("#faq")}
-                  className={activeNav === "#project" ? "active" : ""}
+                  className={activeNav === "#faq" ? "active" : ""}
                 >
                   FAQ
                 </a>
