@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Team.module.css";
 import moby from "../../assets/moby.png";
 import oyin from "../../assets/oyin.png";
-import miranda from "../../assets/miranda.png";
+import ibukun from "../../assets/ibk.png";
 import kwesi from "../../assets/kwesi.png";
 
 const Team = () => {
@@ -34,9 +34,9 @@ const Team = () => {
               </span>
             </article>
             <article className="">
-              <img src={miranda} alt="Miranda is the CPO" />
+              <img src={ibukun} alt="Ibukun is the CPO" />
               <span className={style.teamContent}>
-                <h5>Miranda Anya </h5>
+                <h5>Ibukun Ayomide-Baafog </h5>
                 <small>Chief Product Officer</small>
               </span>
             </article>
