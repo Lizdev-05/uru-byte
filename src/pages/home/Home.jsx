@@ -8,9 +8,13 @@ const About = () => {
       <div className={`homeContainer ${style.homeContainer}`}>
         <div className={style.homeContent}>
           <h1>Gain a Competitive Edge with Actionable Market Intelligence</h1>
-          <p>
+          {/* <p>
             Unlock critical insights on companies, topics, and industries across
             an extensive universe of content—including your own.
+          </p> */}
+          <p>
+            Transform unstructured data from diverse sources into customizable,
+            insightful outputs.
           </p>
           <a href="#contact" className="btn-warning">
             Join Waitlist
