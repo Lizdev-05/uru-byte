@@ -21,9 +21,13 @@ const About = () => {
         <div className={style.aboutIntro}>
           <span className={style.introSpan}>About</span>
           <h2 id="">Empowering African Businesses with Data-Driven Insights</h2>
-          <p>
+          {/* <p>
             UruByte is a market intelligence platform designed to bridge the gap
             between data and actionable strategies.
+          </p> */}
+          <p>
+            Streamline your data processes, make faster decisions, and stay
+            ahead of the curve in the dynamic African business landscape
           </p>
         </div>
         <div className={style.aboutUs}>
@@ -41,7 +45,7 @@ const About = () => {
                             flex="1"
                             textAlign="left"
                           >
-                            Effortless Reporting
+                            Data Integration Made Simple:
                           </span>
                           <AccordionIcon className="text-left !text-navy-900 dark:!text-dark" />
                         </AccordionButton>
@@ -50,8 +54,9 @@ const About = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        UruBytes streamlines data integration, transforming
+                        scattered information into a unified, actionable
+                        resource.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
@@ -69,7 +74,7 @@ const About = () => {
                             flex="1"
                             textAlign="left"
                           >
-                            Tailored Insights
+                            Empower Your Decisions:
                           </span>
                           <AccordionIcon className="text-left !text-navy-900 dark:!text-dark" />
                         </AccordionButton>
@@ -78,8 +83,8 @@ const About = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Make informed choices faster with comprehensive insights
+                        and trend analysis at your fingertips.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
@@ -97,7 +102,7 @@ const About = () => {
                             flex="1"
                             textAlign="left"
                           >
-                            Location & Industry Intelligence
+                            Drive Innovation:
                           </span>
                           <AccordionIcon className="text-left !text-navy-900 dark:!text-dark" />
                         </AccordionButton>
@@ -106,8 +111,9 @@ const About = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Break free from data silos and unleash the full
+                        potential of your business with UruBytes' cutting-edge
+                        solutions.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
