@@ -43,8 +43,12 @@ const Faq = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        UruByte offers data intelligence services tailored for
+                        startups and investors in Africa. These services include
+                        seamless data integration, powerful analytics tools,
+                        insightful reporting, and collaborative features, all
+                        designed to empower users with actionable insights for
+                        informed decision-making and strategic growth.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
@@ -70,8 +74,10 @@ const Faq = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Yes, absolutely! At Urubytes, we understand that each
+                        user may have unique data needs and requirements. That's
+                        why we offer customized reporting options tailored to
+                        your specific preferences and objectives.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
@@ -97,35 +103,9 @@ const Faq = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
-                      </AccordionPanel>
-                    </AccordionItem>
-                  </Accordion>
-                </span>
-              </li>
-              <li className={style.faqList}>
-                <span className={style.text}>
-                  <Accordion className="w-full" allowMultiple>
-                    <AccordionItem className="border-b border-gray-200 py-[17px] dark:!border-white/10">
-                      <p>
-                        <AccordionButton className="flex justify-between">
-                          <span
-                            className="text-left font-bold text-navy-900 dark:text-dark"
-                            flex="1"
-                            textAlign="left"
-                          >
-                            Where does UruByte source its data?{" "}
-                          </span>
-                          <AccordionIcon className="text-left !text-navy-900 dark:!text-dark" />
-                        </AccordionButton>
-                      </p>
-                      <AccordionPanel
-                        className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
-                        pb={4}
-                      >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Our team is committed to delivering accurate and
+                        actionable reports to you as efficiently as possible,
+                        without compromising on quality.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
@@ -155,40 +135,24 @@ const Faq = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Yes, your data security is of utmost importance to us at
+                        Urubytes. We have implemented robust security measures
+                        to ensure that your data remains safe and protected at
+                        all times. Our platform utilizes advanced encryption
+                        techniques to safeguard your data during storage and
+                        transmission, preventing unauthorized access or
+                        breaches. Additionally, we adhere to strict data privacy
+                        regulations and industry best practices to maintain the
+                        confidentiality and integrity of your information. Our
+                        team undergoes regular security audits and assessments
+                        to identify and address any potential vulnerabilities,
+                        ensuring that your data remains secure.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
                 </span>
               </li>
-              <li className={style.faqList}>
-                <span className={style.text}>
-                  <Accordion className="w-full" allowMultiple>
-                    <AccordionItem className="border-b border-gray-200 py-[17px] dark:!border-white/10">
-                      <p>
-                        <AccordionButton className="flex justify-between">
-                          <span
-                            className="text-left font-bold text-navy-900 dark:text-dark"
-                            flex="1"
-                            textAlign="left"
-                          >
-                            How much does UruByte cost?{" "}
-                          </span>
-                          <AccordionIcon className="text-left !text-navy-900 dark:!text-dark" />
-                        </AccordionButton>
-                      </p>
-                      <AccordionPanel
-                        className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
-                        pb={4}
-                      >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
-                      </AccordionPanel>
-                    </AccordionItem>
-                  </Accordion>
-                </span>
-              </li>
+
               <li className={style.faqList}>
                 <span className={style.text}>
                   <Accordion className="w-full" allowMultiple>
@@ -209,8 +173,10 @@ const Faq = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Look for a "Get Started" button. This will lead you
+                        through a signup process to create your account. You can
+                        also request for demos to allow you explore the platform
+                        and its features.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>
@@ -227,7 +193,7 @@ const Faq = () => {
                             flex="1"
                             textAlign="left"
                           >
-                            Do you have any case studies or success stories?{" "}
+                            How can I partner with Urubytes?
                           </span>
                           <AccordionIcon className="text-left !text-navy-900 dark:!text-dark" />
                         </AccordionButton>
@@ -236,8 +202,11 @@ const Faq = () => {
                         className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
-                        Easily create tailored market reports by on industries
-                        and regions in minuteses it a friendly expression.
+                        Contact UruByte's partnership or business development
+                        team to express your interest in partnering. This can be
+                        done through our website contact form. Clearly
+                        articulate how your organization can benefit UruByte and
+                        its customers through collaboration.
                       </AccordionPanel>
                     </AccordionItem>
                   </Accordion>

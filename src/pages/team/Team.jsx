@@ -22,7 +22,7 @@ const Team = () => {
             <article className="">
               <img src={moby} alt="Moby is the CEO" />
               <span className={style.teamContent}>
-                <h5>Mobigshe </h5>
+                <h5>Mogbitse Okitikpi </h5>
                 <small>Chief Executive Officer</small>
               </span>
             </article>
