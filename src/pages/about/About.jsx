@@ -11,15 +11,12 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 3 }}
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="3000"
       id="about"
       className={style.aboutContainer}
     >
@@ -152,7 +149,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
