@@ -12,11 +12,15 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 
-// import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-
 const About = () => {
   return (
-    <div id="about" className={style.aboutContainer}>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      id="about"
+      className={style.aboutContainer}
+    >
       <div id="about" className={`containe ${style.aboutContainer}`}>
         <div className={style.aboutIntro}>
           <span className={style.introSpan}>About</span>

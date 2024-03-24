@@ -4,7 +4,12 @@ import uruLogo from "../../assets/uru-logo.png";
 
 const Footer = () => {
   return (
-    <div className={style.container}>
+    <div
+      className={style.container}
+      data-aos="zoom-out-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+    >
       <img src={uruLogo} alt="" className={style.footerImg} />
       <div className={style.footer}>
         <div>

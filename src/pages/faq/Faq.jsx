@@ -21,7 +21,11 @@ const Faq = () => {
           <p>We have put together some commonly asked questions</p>
         </div>
         <div className={style.faqUs}>
-          <div className={style.faqContent}>
+          <div
+            className={style.faqContent}
+            data-aos="zoom-out-right"
+            data-aos-duration="3000"
+          >
             <ul>
               <li className={style.faqList}>
                 <span className={style.text}>
@@ -113,7 +117,11 @@ const Faq = () => {
               </li>
             </ul>
           </div>
-          <div className={style.faqContent}>
+          <div
+            className={style.faqContent}
+            data-aos="zoom-out-left"
+            data-aos-duration="3000"
+          >
             <ul>
               <li className={style.faqList}>
                 <span className={style.text}>

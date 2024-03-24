@@ -22,6 +22,21 @@
   color: var(--color--light);
 }
 
+.theImage {
+  animation: bounce 4s linear infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
 /* ===============================  MEDIA QUERY (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
   .homeContainer {

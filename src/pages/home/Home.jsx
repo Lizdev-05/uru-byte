@@ -26,7 +26,7 @@ const About = () => {
         </div>
         <div className={style.homeRight}>
           <div className={style.homeImg}>
-            <img src={homeImg} alt="Home image" />
+            <img className={style.theImage} src={homeImg} alt="Home image" />
           </div>
         </div>
       </div>
