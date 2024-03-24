@@ -24,7 +24,13 @@ const Feature = () => {
         </div>
         <div className={style.meContent}>
           <div className={style.featureCards}>
-            <article className={style.featureCard}>
+            <article
+              className={style.featureCard}
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+            >
               <img src={imgOne} alt="" className={style.featureIcon} />
 
               <h5>Interactive Dashboards</h5>
@@ -38,7 +44,13 @@ const Feature = () => {
                 <FaArrowRight />
               </div>
             </article>
-            <article className={style.featureCard}>
+            <article
+              className={style.featureCard}
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+            >
               <img src={imgTwo} alt="" className={style.featureIcon} />
               <h5>Advanced Analytics</h5>
               <small>
@@ -51,7 +63,13 @@ const Feature = () => {
                 <FaArrowRight />
               </div>
             </article>
-            <article className={style.featureCard}>
+            <article
+              className={style.featureCard}
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+            >
               <img src={imgThree} alt="" className={style.featureIcon} />
               <h5>AI-Powered Insights</h5>
               <small>
@@ -64,7 +82,13 @@ const Feature = () => {
                 <FaArrowRight />
               </div>
             </article>
-            <article className={style.featureCard}>
+            <article
+              className={style.featureCard}
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+            >
               <img src={imgFour} alt="" className={style.featureIcon} />
               <h5>Competitive Intelligence</h5>
               <small>
@@ -77,7 +101,13 @@ const Feature = () => {
                 <FaArrowRight />
               </div>
             </article>
-            <article className={style.featureCard}>
+            <article
+              className={style.featureCard}
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+            >
               <img src={imgFive} alt="" className={style.featureIcon} />
               <h5>Real-Time Alerts</h5>
               <small>
@@ -90,7 +120,13 @@ const Feature = () => {
                 <FaArrowRight />
               </div>
             </article>
-            <article className={style.featureCard}>
+            <article
+              className={style.featureCard}
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+            >
               <img src={imgSix} alt="" className={style.featureIcon} />
               <h5>Customizable Reports</h5>
               <small>

@@ -11,12 +11,18 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-
-// import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className={style.aboutContainer}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 3 }}
+      id="about"
+      className={style.aboutContainer}
+    >
       <div id="about" className={`containe ${style.aboutContainer}`}>
         <div className={style.aboutIntro}>
           <span className={style.introSpan}>About</span>
@@ -146,7 +152,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
