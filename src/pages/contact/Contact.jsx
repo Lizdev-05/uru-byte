@@ -7,7 +7,11 @@ const Contact = () => {
   return (
     <div id="contact">
       <div id="contact" className={`containe ${style.contactContainer}`}>
-        <div className={style.contactUs}>
+        <div
+          className={style.contactUs}
+          data-aos="zoom-in-up"
+          data-aos-duration="3000"
+        >
           <div className={style.contactForm}>
             <h2>Contact Us</h2>
             <form action="">

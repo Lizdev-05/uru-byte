@@ -16,6 +16,7 @@ const About = () => {
   return (
     <div
       data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
       data-aos-duration="3000"
       id="about"
       className={style.aboutContainer}
