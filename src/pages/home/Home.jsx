@@ -17,7 +17,7 @@ const About = () => {
             Transform unstructured data from diverse sources into customizable,
             insightful outputs.
           </p>
-          <a href="#contact" className="btn-warning">
+          <a href="#about" className="btn-warning">
             Join Waitlist
           </a>
           <a href="#contact" className="btn-secondary">
