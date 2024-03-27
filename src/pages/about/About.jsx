@@ -22,7 +22,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   // states to check if form is being submitted and is submitted
-  const [isSubmitting, setIsSubmitting] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Function to add the user to the waitlist
@@ -107,7 +107,7 @@ const About = () => {
                 <span className={style.text}>
                   <img src={imgOne} alt="" className={style.iconn} />
                   <Accordion className="w-full" allowMultiple>
-                    <AccordionItem className="border-b border-gray-200 py-[17px] dark:!border-white/10">
+                    <AccordionItem className="border-b border-gray-200 dark:!border-white/10">
                       <h2>
                         <AccordionButton className="flex justify-between">
                           <span
@@ -121,7 +121,7 @@ const About = () => {
                         </AccordionButton>
                       </h2>
                       <AccordionPanel
-                        className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
+                        className="text-left text-medium !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
                         UruBytes streamlines data integration, transforming
@@ -137,7 +137,7 @@ const About = () => {
                   <img src={imgTwo} alt="" className={style.iconn} />
                   <Accordion className="w-full" allowMultiple>
                     <AccordionItem className="border-b border-gray-200 py-[17px] dark:!border-white/10">
-                      <h2>
+                      <h2 className={style.accordionH2}>
                         <AccordionButton className="flex justify-between">
                           <span
                             className="text-left font-bold text-navy-900 dark:text-dark"
@@ -150,7 +150,7 @@ const About = () => {
                         </AccordionButton>
                       </h2>
                       <AccordionPanel
-                        className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
+                        className="text-left text-medium !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
                         Make informed choices faster with comprehensive insights
@@ -165,7 +165,7 @@ const About = () => {
                   <img src={imgThree} alt="" className={style.iconn} />
                   <Accordion className="w-full" allowMultiple>
                     <AccordionItem className="border-b border-gray-200 py-[17px] dark:!border-white/10">
-                      <h2>
+                      <h2 className={style.accordionH2}>
                         <AccordionButton className="flex justify-between">
                           <span
                             className="text-left font-bold text-navy-900 dark:text-dark"
@@ -178,7 +178,7 @@ const About = () => {
                         </AccordionButton>
                       </h2>
                       <AccordionPanel
-                        className="text-left text-medium mt-1 !text-navy-900 dark:!text-dark"
+                        className="text-left text-medium !text-navy-900 dark:!text-dark"
                         pb={4}
                       >
                         Break free from data silos and unleash the full
@@ -194,7 +194,7 @@ const About = () => {
 
           <div className={style.aboutForm}>
             {isSubmitting ? (
-              <Center>
+              <Center h='100%'>
                 <Spinner
                   thickness='5px'
                   speed='0.65s'
@@ -206,16 +206,16 @@ const About = () => {
             ) : isSubmitted ? (
               <Box>
                 <Heading as='h3' mb='8' className={style.waitlistInfoHeader}>Welcome Aboard!</Heading>
-                <Text className={style.waitlistInfoText} mb='12'>
+                <Text className={style.waitlistInfoText} mb='5'>
                   Thank you for joining our waitlist. We'll notify you as soon as we launch and you can be among the first to experience <span className={style.logoText}>UruBytes</span>.
                 </Text>
 
-                <Text className={style.waitlistInfoText} mb='10'>In the meantime, you can engage with us on social media:</Text>
+                <Text className={style.waitlistInfoText} mb='5'>In the meantime, you can engage with us on social media:</Text>
 
                 <Link href="https://www.linkedin.com/company/urubyte/" isExternal flex={1}>
                   <Flex>
                     <FaLinkedin className={style.icon} />
-                    <Text ml={5}>@urubytes</Text>
+                    <Text ml={2}>@urubytes</Text>
                   </Flex>
                 </Link>
               </Box>
@@ -248,7 +248,7 @@ const About = () => {
                   </div>
 
                   <button type="submit" className={style.btn}>
-                    Send Message
+                    Add Me To Waitlist
                   </button>
                 </form>
               </>
