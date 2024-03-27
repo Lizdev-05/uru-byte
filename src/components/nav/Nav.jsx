@@ -22,7 +22,7 @@ const Nav = () => {
         className={`flex flex-col z-10 bg px-8 py-7 ${
           mobileMenu ? "h-screen " : "h-fit"
           // } fixed top-0 w-full border-b-4 border-black md:flex-row md:justify-between md:px-20 md:h-fit`}
-        } fixed top-0 w-full border-b-4 border-black md:flex-row md:justify-between md:px-28  md:h-fit`}
+        } fixed top-0 w-full border border-gray-400 md:flex-row md:justify-between md:px-28  md:h-fit`}
       >
         <div className="flex ">
           <a href="#" className="">

@@ -1,6 +1,6 @@
 import React from "react";
+import { useState } from "react";
 import style from "./About.module.css";
-import aboutImg from "../../assets/Rectangle.png";
 import imgOne from "../../assets/Icon.png";
 import imgTwo from "../../assets/Iconn.png";
 import imgThree from "../../assets/Group16.png";
@@ -10,9 +10,75 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  Spinner,
+  Heading,
+  Center,
+  Text,
+  Flex,
+  Box,
+  Link
 } from "@chakra-ui/react";
+import { FaLinkedin } from "react-icons/fa";
 
 const About = () => {
+  // states to check if form is being submitted and is submitted
+  const [isSubmitting, setIsSubmitting] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Function to add the user to the waitlist
+  function addToWaitlist(event) {
+    event.preventDefault();
+    setIsSubmitting(true);
+
+    const email = event.target.email.value;
+    const phoneNumber = event.target.number.value;
+
+    // Email validation (basic check for format)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setIsSubmitting(false)
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    // Remove non-digit characters
+    const digitsOnly = phoneNumber.replace(/\D/g, "");
+
+    // Check for valid lengths (10 or 12 digits)
+    if (!digitsOnly.length === 10 || !(digitsOnly.length === 12 && phoneNumber.startsWith("+"))) {
+      setIsSubmitting(false)
+      alert("A valid phone number is required. Should be 10 digits or 14 digits with country code.");
+      return;
+    }
+
+    // Prepare data to send
+    const data = {
+      "email": email,
+      "phoneNumber": phoneNumber, // Remove non-digit characters from phone number
+    };
+    console.log(data);
+
+    fetch("http://127.0.0.1:8000/auxi/waitlists/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        } else {
+          console.log(data);
+          setIsSubmitted(true);
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        // alert(error.message);
+        setIsSubmitting(false);
+      })
+      .finally(() => setIsSubmitting(false));
+  }
+
   return (
     <div
       data-aos="zoom-in-up"
@@ -125,28 +191,68 @@ const About = () => {
               </li>
             </ul>
           </div>
+
           <div className={style.aboutForm}>
-            <h2>Join Waitlist</h2>
-            <form action="">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your Email"
-                minLength={3}
-                required
-              />
+            {isSubmitting ? (
+              <Center>
+                <Spinner
+                  thickness='5px'
+                  speed='0.65s'
+                  emptyColor='gray.200'
+                  color='#e58a13'
+                  size='xl'
+                />
+              </Center>
+            ) : isSubmitted ? (
+              <Box>
+                <Heading as='h3' mb='8' className={style.waitlistInfoHeader}>Welcome Aboard!</Heading>
+                <Text className={style.waitlistInfoText} mb='12'>
+                  Thank you for joining our waitlist. We'll notify you as soon as we launch and you can be among the first to experience <span className={style.logoText}>UruBytes</span>.
+                </Text>
 
-              <input
-                type="number"
-                name="number"
-                placeholder="Enter Your Phone Number"
-                required
-              />
+                <Text className={style.waitlistInfoText} mb='10'>In the meantime, you can engage with us on social media:</Text>
 
-              <button type="submit" className={style.btn}>
-                Send Message
-              </button>
-            </form>
+                <Link href="https://www.linkedin.com/company/urubyte/" isExternal flex={1}>
+                  <Flex>
+                    <FaLinkedin className={style.icon} />
+                    <Text ml={5}>@urubytes</Text>
+                  </Flex>
+                </Link>
+              </Box>
+            ) : (
+              <>
+                <h2>Join Waitlist</h2>
+
+                <form action="" method="post" onSubmit={addToWaitlist}>
+                  <div>
+                    <label htmlFor="email">Email Address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Eg: mishek.lukhama@gomonji.com"
+                      minLength={3}
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label>Phone Number</label>
+                    <input
+                      type="tel"
+                      minLength="10"
+                      maxLength="14"
+                      name="number"
+                      placeholder="Eg: +233555555555"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" className={style.btn}>
+                    Send Message
+                  </button>
+                </form>
+              </>
+            )}
           </div>
         </div>
       </div>

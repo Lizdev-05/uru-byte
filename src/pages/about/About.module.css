@@ -1,3 +1,24 @@
+.waitlistInfoHeader {
+  color: #0b1c33 !important;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #0A66C2;
+}
+
+.logoText {
+  color:#e58a13;
+}
+
+.waitlistInfoText {
+  color: #747474 !important;
+  font-size: 1.05rem !important;
+}
+
 .aboutIntro {
   display: flex;
   align-items: center;
