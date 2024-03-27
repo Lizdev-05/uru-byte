@@ -1,3 +1,24 @@
+.waitlistInfoHeader {
+  color: #0b1c33 !important;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #0A66C2;
+}
+
+.logoText {
+  color:#e58a13;
+}
+
+.waitlistInfoText {
+  color: #747474 !important;
+  font-size: 1.05rem !important;
+}
+
 .aboutIntro {
   display: flex;
   align-items: center;
@@ -32,9 +53,10 @@
   color: #747474;
   font-size: 1.2rem;
 }
+
 .aboutContent h2 {
-  font-size: 1.9rem;
-  margin-bottom: 2rem;
+  /* font-size: 2rem !important; */
+  margin-bottom: 0;
 }
 .aboutUs {
   display: grid;
@@ -84,6 +106,8 @@
   font-size: 2.5rem;
   color: #3788e5;
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px;
 }
 form {
   display: flex;

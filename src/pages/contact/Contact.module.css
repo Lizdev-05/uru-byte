@@ -1,3 +1,24 @@
+.contactInfoHeader {
+  color: #0b1c33 !important;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.linkedIn {
+  font-size: 2rem;
+  color: #0A66C2;
+}
+
+.logoText {
+  color:#e58a13;
+}
+
+.contactInfoText {
+  color: #747474 !important;
+  font-size: 1.05rem !important;
+}
+
 .contactContainer {
   margin-bottom: 5rem;
   background: #f8fbff;
