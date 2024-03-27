@@ -58,7 +58,7 @@ const About = () => {
     };
     console.log(data);
 
-    fetch("http://127.0.0.1:8000/auxi/waitlists/", {
+    fetch("https://urubytes-psotp.ondigitalocean.app/auxi/waitlists/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
