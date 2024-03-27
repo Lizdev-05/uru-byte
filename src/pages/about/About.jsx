@@ -56,7 +56,6 @@ const About = () => {
       "email": email,
       "phoneNumber": phoneNumber, // Remove non-digit characters from phone number
     };
-    console.log(data);
 
     fetch("https://urubytes-psotp.ondigitalocean.app/auxi/waitlists/", {
       method: "POST",
@@ -67,13 +66,10 @@ const About = () => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         } else {
-          console.log(data);
           setIsSubmitted(true);
         }
       })
       .catch(error => {
-        console.error(error);
-        // alert(error.message);
         setIsSubmitting(false);
       })
       .finally(() => setIsSubmitting(false));
