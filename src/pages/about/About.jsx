@@ -16,7 +16,7 @@ import {
   Text,
   Flex,
   Box,
-  Link
+  Link,
 } from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -36,7 +36,7 @@ const About = () => {
     // Email validation (basic check for format)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
       alert("Please enter a valid email address.");
       return;
     }
@@ -45,16 +45,21 @@ const About = () => {
     const digitsOnly = phoneNumber.replace(/\D/g, "");
 
     // Check for valid lengths (10 or 12 digits)
-    if (!digitsOnly.length === 10 || !(digitsOnly.length === 12 && phoneNumber.startsWith("+"))) {
-      setIsSubmitting(false)
-      alert("A valid phone number is required. Should be 10 digits or 14 digits with country code.");
+    if (
+      !digitsOnly.length === 10 ||
+      !(digitsOnly.length === 13 && phoneNumber.startsWith("+"))
+    ) {
+      setIsSubmitting(false);
+      alert(
+        "A valid phone number is required. Should be 10 digits or 14 digits with country code."
+      );
       return;
     }
 
     // Prepare data to send
     const data = {
-      "email": email,
-      "phoneNumber": phoneNumber, // Remove non-digit characters from phone number
+      email: email,
+      phoneNumber: phoneNumber, // Remove non-digit characters from phone number
     };
 
     fetch("https://urubytes-psotp.ondigitalocean.app/auxi/waitlists/", {
@@ -62,14 +67,14 @@ const About = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     })
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         } else {
           setIsSubmitted(true);
         }
       })
-      .catch(error => {
+      .catch((error) => {
         setIsSubmitting(false);
       })
       .finally(() => setIsSubmitting(false));
@@ -190,25 +195,35 @@ const About = () => {
 
           <div className={style.aboutForm}>
             {isSubmitting ? (
-              <Center h='100%'>
+              <Center h="100%">
                 <Spinner
-                  thickness='5px'
-                  speed='0.65s'
-                  emptyColor='gray.200'
-                  color='#e58a13'
-                  size='xl'
+                  thickness="5px"
+                  speed="0.65s"
+                  emptyColor="gray.200"
+                  color="#e58a13"
+                  size="xl"
                 />
               </Center>
             ) : isSubmitted ? (
               <Box>
-                <Heading as='h3' mb='8' className={style.waitlistInfoHeader}>Welcome Aboard!</Heading>
-                <Text className={style.waitlistInfoText} mb='5'>
-                  Thank you for joining our waitlist. We'll notify you as soon as we launch and you can be among the first to experience <span className={style.logoText}>UruBytes</span>.
+                <Heading as="h3" mb="8" className={style.waitlistInfoHeader}>
+                  Welcome Aboard!
+                </Heading>
+                <Text className={style.waitlistInfoText} mb="5">
+                  Thank you for joining our waitlist. We'll notify you as soon
+                  as we launch and you can be among the first to experience{" "}
+                  <span className={style.logoText}>UruBytes</span>.
                 </Text>
 
-                <Text className={style.waitlistInfoText} mb='5'>In the meantime, you can engage with us on social media:</Text>
+                <Text className={style.waitlistInfoText} mb="5">
+                  In the meantime, you can engage with us on social media:
+                </Text>
 
-                <Link href="https://www.linkedin.com/company/urubyte/" isExternal flex={1}>
+                <Link
+                  href="https://www.linkedin.com/company/urubyte/"
+                  isExternal
+                  flex={1}
+                >
                   <Flex>
                     <FaLinkedin className={style.icon} />
                     <Text ml={2}>@urubytes</Text>
