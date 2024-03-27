@@ -19,14 +19,14 @@ const Nav = () => {
   return (
     <div className="">
       <nav
-        className={`flex flex-col z-10 bg px-8 py-7 ${
+        className={`flex flex-col z-10 bg px-8 py-5 ${
           mobileMenu ? "h-screen " : "h-fit"
           // } fixed top-0 w-full border-b-4 border-black md:flex-row md:justify-between md:px-20 md:h-fit`}
-        } fixed top-0 w-full border-b-4 border-black md:flex-row md:justify-between md:px-28  md:h-fit`}
+        } fixed top-0 w-full border border-gray-300 md:flex-row md:justify-between md:px-28  md:h-fit`}
       >
         <div className="flex ">
           <a href="#" className="">
-            <img src={logo} alt="Urubyte" className="w-auto h-8 md:h-10" />
+            <img src={logo} alt="Urubyte" className="w-auto h-12 md:h-10" />
           </a>
         </div>
 
