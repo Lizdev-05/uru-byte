@@ -37,14 +37,9 @@ const Contact = () => {
     const digitsOnly = phoneNumber.replace(/\D/g, "");
 
     // Check for valid lengths (10 or 12 digits)
-    if (
-      !digitsOnly.length === 10 ||
-      !(digitsOnly.length === 13 && phoneNumber.startsWith("+"))
-    ) {
-      setIsSubmitting(false);
-      alert(
-        "A valid phone number is required. Should be 10 digits or 14 digits with country code."
-      );
+    if (!(digitsOnly.length === 13 && phoneNumber.startsWith("+"))) {
+      setIsSubmitting(false)
+      alert("A valid phone number is required. Should be 14 digits including country code. Eg: +2348012345678 or +2336012345678");
       return;
     }
 
@@ -62,7 +57,7 @@ const Contact = () => {
       message: message,
     };
 
-    fetch("https://urubytes-psotp.ondigitalocean.app/auxi/contacts/", {
+    fetch("https://urubytes-backend-v2-r6wnv.ondigitalocean.app/auxi/contacts/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
