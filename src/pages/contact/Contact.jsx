@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import style from "./Contact.module.css";
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import {
   Spinner,
@@ -169,15 +169,24 @@ const Contact = () => {
 
           <div className={style.contactContent}>
             <span className={style.introSpan}>CONTACT</span>
-            <h1>Let's Discuss How UruByte Can Help Your Business</h1>
+            <h1>Let's Discuss How UruBytes Can Help Your Business</h1>
             <p>
               Start your journey towards data-driven decision-making. Contact us
               today for a personalized consultation.
             </p>
             <div className={style.contactDetails}>
               <div className={style.contactDetail}>
+                <FaWhatsapp className={style.icon} />
+                  <h4>
+                    <a href="https://wa.link/vl5ptd">WhatsApp</a>
+                  </h4>
+              </div>
+
+              <div className={style.contactDetail}>
                 <FaEnvelope className={style.icon} />
-                <h4>ojesanmioyin@gmail.com</h4>
+                    <h4>
+                      <a href="mailto:urubytes@gmail.com">urubytes@gmail.com</a>
+                    </h4>
               </div>
 
               <div className={style.contactDetail}>
