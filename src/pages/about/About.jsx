@@ -57,7 +57,7 @@ const About = () => {
       phoneNumber: phoneNumber, // Remove non-digit characters from phone number
     };
 
-    fetch("https://urubytes-backend-v2-r6wnv.ondigitalocean.app/auxi/waitlists/", {
+    fetch("http://localhost:8000/auxi/waitlists/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

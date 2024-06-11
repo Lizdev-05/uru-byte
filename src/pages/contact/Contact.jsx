@@ -57,7 +57,7 @@ const Contact = () => {
       message: message,
     };
 
-    fetch("https://urubytes-backend-v2-r6wnv.ondigitalocean.app/auxi/contacts/", {
+    fetch("http://localhost:8000/auxi/contacts/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
